@@ -1,0 +1,22 @@
+.model MAGG8
+.inputs A7 A6 A5 A4 A3 A2 A1 A0 B7 B6 B5 B4 B3 B2 B1 B0
+.outputs AmaggB
+.subckt XOR A=A7 B=B7 OUT=X7
+.subckt XOR A=A6 B=B6 OUT=X6
+.subckt XOR A=A5 B=B5 OUT=X5
+.subckt XOR A=A4 B=B4 OUT=X4
+.subckt XOR A=A3 B=B3 OUT=X3
+.subckt XOR A=A2 B=B2 OUT=X2
+.subckt XOR A=A1 B=B1 OUT=X1
+.subckt XOR A=A0 B=B0 OUT=X0
+.names A7 A6 A5 A4 A3 A2 A1 A0 X7 X6 X5 X4 X3 X2 X1 X0 AmaggB
+1-------1------- 1
+-1------01------ 1
+--1-----001----- 1
+---1----0001---- 1
+----1---00001--- 1
+-----1--000001-- 1
+------1-0000001- 1
+-------100000001 1
+.search xor.blif
+.end

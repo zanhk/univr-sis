@@ -1,0 +1,228 @@
+.model FSMD
+.inputs INIT RESET PH7 PH6 PH5 PH4 PH3 PH2 PH1 PH0
+.outputs ST1 ST0 INREG7 INREG6 INREG5 INREG4 INREG3 INREG2 INREG1 INREG0 VLV1 \
+VLV0
+.default_input_arrival 0.00 0.00 
+.default_output_required 0.00 0.00 
+.default_input_drive 0.20 0.20 
+.default_output_load 1.00 
+.default_max_input_load 999.00 
+.latch    [80761] OUTREG7 re NIL 0
+.latch    [80774] OUTREG6 re NIL 0
+.latch    [80362] OUTREG5 re NIL 0
+.latch    [80763] OUTREG4 re NIL 0
+.latch    [80782] OUTREG3 re NIL 0
+.latch    [80787] OUTREG2 re NIL 0
+.latch    [80361] OUTREG1 re NIL 0
+.latch    [80789] OUTREG0 re NIL 0
+.latch    [80363] LatchOut_v5 re NIL 1
+.latch    [80612] LatchOut_v6 re NIL 0
+.names OUTREG3 [80529]
+0 1
+.names OUTREG1 OUTREG2 OUTREG0 [80534]
+0-- 1
+-0- 1
+--0 1
+.names [80529] [80534] [39266]
+00 1
+.names OUTREG4 [39266] [80536]
+11 1
+00 1
+.names [80536] OUTREG6 OUTREG4 OUTREG5 [80540]
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names OUTREG7 [80540] [76907]
+00 1
+.names [76907] [80540] OUTREG7 [76178]
+00- 1
+0-0 1
+.names LatchOut_v6 [80541]
+0 1
+.names PH7 PH6 [40035]
+00 1
+.names PH1 PH0 [44275]
+00 1
+.names PH4 PH2 PH5 PH3 [80550]
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names [40035] [44275] [80550] [80551]
+0-- 1
+-00 1
+.names PH7 [80585]
+0 1
+.names PH3 PH2 PH1 PH0 [80705]
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.names PH5 [80705] PH4 [45136]
+00- 1
+0-0 1
+.names PH6 [80542]
+0 1
+.names [80585] [45136] [80542] [80555]
+0-- 1
+-00 1
+.names [80555] [80712]
+0 1
+.names [80541] [80551] LatchOut_v5 [80712] [77111]
+0-0- 1
+-00- 1
+0--0 1
+-0-0 1
+.names RESET [80581]
+0 1
+.names [80581] INIT [80558]
+0- 1
+-0 1
+.names [80558] [80729]
+0 1
+.names [80551] [80723]
+0 1
+.names [80729] [80723] [80555] [80559]
+0-- 1
+-00 1
+.names [80559] LatchOut_v5 [80541] [76900]
+000 1
+.names [80555] [80729] [80900]
+1- 1
+-0 1
+.names [76900] [80559] [80900] [77005]
+00- 1
+0-0 1
+.names [77111] [77005] [80562]
+0- 1
+-0 1
+.names [76178] [80562] [80760]
+1- 1
+-1 1
+.names [80760] INREG7
+0 1
+.names INREG7 [80761]
+1 1
+.names OUTREG6 [80527]
+0 1
+.names OUTREG4 [80528]
+0 1
+.names OUTREG5 [80528] [76047]
+00 1
+.names [80528] OUTREG5 [80536] [76047] [76244]
+0-0- 1
+-00- 1
+0--0 1
+-0-0 1
+.names OUTREG5 [80538]
+0 1
+.names [80536] [80562] [80564]
+1- 1
+-1 1
+.names [76244] [80562] [80538] [80564] INREG5
+00-- 1
+--00 1
+.names [80527] INREG5 [80538] [80771]
+0-- 1
+-00 1
+.names [80562] [80746]
+0 1
+.names [80771] [80540] [80746] [80773]
+0-- 1
+-0- 1
+--0 1
+.names [80773] INREG6
+0 1
+.names INREG6 [80774]
+1 1
+.names INREG5 [80362]
+1 1
+.names [80564] INREG4
+0 1
+.names INREG4 [80763]
+1 1
+.names [80534] OUTREG3 [80776]
+0- 1
+-0 1
+.names [80776] OUTREG3 [80534] [80566]
+0-- 1
+-00 1
+.names [80566] [80746] [80781]
+0- 1
+-0 1
+.names [80781] INREG3
+0 1
+.names INREG3 [80782]
+1 1
+.names OUTREG2 [80531]
+0 1
+.names OUTREG1 [80530]
+0 1
+.names OUTREG0 [80532]
+0 1
+.names [80531] [80530] [80532] [80784]
+0-- 1
+-00 1
+.names [80784] [80534] [80746] [80786]
+0-- 1
+-0- 1
+--0 1
+.names [80786] INREG2
+0 1
+.names INREG2 [80787]
+1 1
+.names [80532] [80746] [80568]
+0- 1
+-0 1
+.names [80568] [80530] [80746] [80794]
+0-- 1
+-0- 1
+--0 1
+.names [80794] [80530] [80568] INREG1
+0-- 1
+-00 1
+.names INREG1 [80361]
+1 1
+.names [80568] INREG0
+0 1
+.names INREG0 [80789]
+1 1
+.names [80900] [80363]
+1 1
+.names [80723] [80729] ST1
+01 1
+.names ST1 [80612]
+1 1
+.names [80559] ST0
+0 1
+.names [80566] [80779]
+0 1
+.names [80540] OUTREG7 OUTREG2 [80798]
+0-- 1
+-00 1
+.names OUTREG7 [80526]
+0 1
+.names [80526] OUTREG6 [80534] OUTREG5 [44303]
+0-0- 1
+-00- 1
+0--0 1
+-0-0 1
+.names [80536] [80779] [80798] [44303] [80800]
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names [80800] [80581] LatchOut_v5 [80575]
+0-- 1
+-0- 1
+--0 1
+.names [80575] [80712] [80541] VLV1
+000 1
+.names [80800] [80541] [80723] [80577]
+0-- 1
+-0- 1
+--0 1
+.names LatchOut_v5 RESET [80577] VLV0
+000 1
+.end

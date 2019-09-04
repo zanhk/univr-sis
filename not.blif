@@ -1,0 +1,6 @@
+.model NOT
+.inputs IN
+.outputs OUT
+.names IN OUT
+1 0
+.end

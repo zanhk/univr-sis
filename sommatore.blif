@@ -1,0 +1,16 @@
+.model SOMMATORE
+.inputs A B CIN
+.outputs OUT_NUM_SUM COUT
+
+.names A B K
+10 1
+01 1
+
+.names K CIN OUT_NUM_SUM
+10 1
+01 1
+
+.names A B CIN COUT
+11- 1
+1-1 1
+-11 1

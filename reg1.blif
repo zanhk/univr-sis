@@ -1,0 +1,4 @@
+.model REG1
+.inputs INBIT
+.outputs OUT
+.latch INBIT OUT re NIL 0
